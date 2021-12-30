@@ -9,4 +9,9 @@ router.get('/contact', (req, res) => {
   res.render('contact', { title: 'Contact Page' });
 });
 
+router.get('/xmas_counter', (req, res) => {
+  res.render('xmas_counter/xmas_counter', { title: 'Contact Page' });
+});
+
+
 module.exports = router;
