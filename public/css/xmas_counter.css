@@ -1,0 +1,60 @@
+:root {
+  --wine-red: #C7375F;
+  --bright-red: #D42D2F;
+  --dark-green: #344D2F;
+  --light-green: #77A047;
+  --gold: #FAC57D;
+  --snow: #F0F4F7;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  text-align: center;
+  color: var(--dark-green);
+  background-color: var(--dark-green);
+  color: var(--gold);
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: var(--snow);
+  padding: 1em 2em;
+  border-radius: 5px;
+  -webkit-box-shadow: var(--dark-green) 0px 4px 6px -1px, var(--light-green) 0px 2px 4px -1px;
+          box-shadow: var(--dark-green) 0px 4px 6px -1px, var(--light-green) 0px 2px 4px -1px;
+}
+
+.countdown-display {
+  font-size: 35px;
+  background: var(--wine-red);
+  margin: 30px 0;
+}
+
+.timer {
+  background: var(--dark-green);
+}
+/*# sourceMappingURL=xmas_counter.css.map */
