@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= title %></title>
-    <%- include ('./partials/head'); %>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+  <%- include ('../partials/head'); %>
 	<link rel="stylesheet" href="css/xmas_counter.css">
 </head>
 <body class="xmas_counter">
-  <%- include ('./partials/navigation'); %>
-	<div class="container">
+  <%- include ('../partials/navigation'); %>
+  <div class="container">
 		<h1>Christmas Countdown 🎄</h1>
 		<div class="project">
 			<div id="countdown-display-1" class="countdown-display">
@@ -24,7 +24,7 @@
 			</div>
 		</div>
 	</div>
-	<%- include ('./partials/footer'); %>
+	<%- include ('../partials/footer'); %>
   <script src="js/xmas_counter.js"></script>
 </body>
 </html>

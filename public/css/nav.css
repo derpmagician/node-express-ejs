@@ -1,4 +1,22 @@
 nav {
   background: #436bda;
 }
+
+nav li {
+  display: inline-block;
+  padding: 0 10px;
+}
+
+nav li a, nav li a:visited {
+  color: yellow;
+}
+
+nav li a:focus {
+  color: #320c55;
+}
+
+nav li a:hover {
+  background: #691bb3;
+  color: #320c55;
+}
 /*# sourceMappingURL=nav.css.map */

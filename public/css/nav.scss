@@ -1,3 +1,23 @@
 nav {
-    background: rgb(67, 107, 218);
+	background: rgb(67, 107, 218);
+
+	li {
+		display: inline-block;
+		padding: 0 10px;
+
+		a, a:visited {
+			color: yellow;
+		}
+
+		a:focus {
+			color: rgb(50, 12, 85);
+		}
+
+		a:hover {
+			background:rgb(105, 27, 179);
+			color: rgb(50, 12, 85);
+		}
+	}
 }
+
+

@@ -10,11 +10,11 @@ router.get('/contact', (req, res) => {
 });
 
 router.get('/xmas_counter', (req, res) => {
-  res.render('xmas_counter', { title: 'Xmas Counter' });
+  res.render('js_projects/xmas_counter', { title: 'Xmas Counter' });
 });
 
 router.get('/shopping_list', (req, res) => {
-  res.render('shopping_list', { title: 'Shopping List' });
+  res.render('js_projects/shopping_list', { title: 'Shopping List' });
 });
 
 module.exports = router;
