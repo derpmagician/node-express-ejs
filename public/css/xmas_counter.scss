@@ -6,7 +6,7 @@
   --gold: #FAC57D;
   --snow: #F0F4F7;
 }
-* {
+body .xmas{
   height: 100vh;
 }
 
@@ -14,15 +14,15 @@
   display: grid;
   place-items: center;
   background: var(--wine-red);
-  
+  padding: 1em 2em;
 }
 
 .project {
   display: flex;
   flex-direction: column;
-  background-color: var(--dark-green);
+  background: var(--dark-green);
   color: var(--snow);
-  padding: 1em 2em;
+  padding: 3em 2em;
   border-radius: 5px;
   box-shadow: var(--dark-green) 0px 4px 6px -1px,
               var(--light-green) 0px 2px 4px -1px;
@@ -31,13 +31,21 @@
 h1 {
   text-align: center;
   color: var(--gold);
+  padding: 10px;
 }
 
+
 .countdown-display {
-  font-size: 35px;
+  font-size: 2rem;
+  padding: 0.25em;
   background: var(--wine-red);
-  margin: 30px 0;
+  margin: 2rem 0;
   border-radius: 10px;
+
+  p {
+    margin: 5px;
+    padding: 10px;
+  }
 }
 
 .countdown-text {

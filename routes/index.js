@@ -14,7 +14,7 @@ router.get('/xmas_counter', (req, res) => {
 });
 
 router.get('/shopping_list', (req, res) => {
-  res.render('shopping_list/shopping_list', { title: 'Shopping List' });
+  res.render('shopping_list', { title: 'Shopping List' });
 });
 
 module.exports = router;
