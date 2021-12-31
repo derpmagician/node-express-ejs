@@ -6,12 +6,12 @@
     --gold: #FAC57D;
     --snow: #F0F4F7;
 }
-  
+
 html, body {
       margin: 0;
       padding: 0;
 }
-  
+
 body {
       display: flex;
       flex-direction: column;
@@ -22,7 +22,7 @@ body {
       color: var(--snow);
       background-color: var(--wine-red);
 }
-  
+
 .checklist {
       color: var(--dark-green);
       display: flex;
@@ -36,17 +36,16 @@ body {
       padding: 1em 2em;
       border-radius: 5px;
       box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
-      
-  }
-  
+}
+
 .checklist-item {
       margin: 0.5em;
       width: 100%;
       text-align: left;
       font-weight: bold;
-      
+
 }
-  
+
 input[type=checkbox]:checked + label.strikethrough{
     text-decoration: line-through;
     font-weight: normal;
@@ -58,14 +57,10 @@ input[type=text] {
   width: 400px;
 }
 
-
 ul {
     padding-left: 0;
-    
     li {
         list-style-type: none;
-        // padding: 1px 1px;
-        
     }
 }
 
