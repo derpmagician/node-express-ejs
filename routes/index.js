@@ -13,5 +13,8 @@ router.get('/xmas_counter', (req, res) => {
   res.render('xmas_counter/xmas_counter', { title: 'Contact Page' });
 });
 
+router.get('/shoopping_list', (req, res) => {
+  res.render('shoopping_list/shoopping_list', { title: 'Contact Page' });
+});
 
 module.exports = router;
