@@ -3,13 +3,9 @@
 	--img-height: 200px;
 }
 
-*, *::before, *::after {
-  margin: 0;
-	box-sizing: border-box;
-}
 
 body {
-  background: rgb(85, 6, 95);
+  background: rgb(19, 6, 95);
 }
 
 // .navbar-brand {
@@ -26,11 +22,19 @@ body {
 //   width: 60%;
 // }
 
+article {
+	display: grid;
+	place-items: center;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 15px;
+	// background: rgb(11, 8, 173);
+}
+
 .container-img {
 	display: grid;
 	place-items: center;
   padding: 10px;
-  margin: 25px;
+
   border-radius: 10px;
 	box-shadow:
 		0.5px 0.5px rgb(115, 10, 129),
@@ -96,4 +100,8 @@ figure {
 	}
 }
 
-
+section {
+	margin: 15px;
+	color: snow;
+	font-size: 1.5rem;
+}

@@ -3,14 +3,17 @@
   --img-height: 200px;
 }
 
-*, *::before, *::after {
-  margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+body {
+  background: #13065f;
 }
 
-body {
-  background: #55065f;
+article {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
 }
 
 .container-img {
@@ -18,7 +21,6 @@ body {
   display: grid;
   place-items: center;
   padding: 10px;
-  margin: 25px;
   border-radius: 10px;
   -webkit-box-shadow: 0.5px 0.5px #730a81, -0.5px -0.5px #730a81;
           box-shadow: 0.5px 0.5px #730a81, -0.5px -0.5px #730a81;
@@ -87,5 +89,11 @@ figure figcaption {
   padding: 10px 15px;
   background: #7509a7;
   border-radius: 10px;
+}
+
+section {
+  margin: 15px;
+  color: snow;
+  font-size: 1.5rem;
 }
 /*# sourceMappingURL=main.css.map */
