@@ -1,13 +1,15 @@
 :root {
   --img-width: 240px;
   --img-height: 200px;
+  --purple: rgba(115, 10, 129, 0.75);
 }
 
 body {
   background: #13065f;
+  color: gold;
 }
 
-article {
+.previews {
   display: -ms-grid;
   display: grid;
   place-items: center;
@@ -21,6 +23,15 @@ article {
   display: -ms-grid;
   display: grid;
   place-items: center;
+  background: rgba(115, 10, 129, 0.329);
+}
+
+.container-img:hover {
+  background: var(--purple);
+  -webkit-box-shadow: 0 2.5px rgba(212, 166, 14, 0.842);
+          box-shadow: 0 2.5px rgba(212, 166, 14, 0.842);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .preview {
@@ -28,10 +39,8 @@ article {
      object-fit: cover;
   width: calc(var(--img-width) * 1);
   height: calc(var(--img-height) * 1);
-  -webkit-box-shadow: 2.5px 2.5px #730a81, -2.5px -2.5px #730a81;
-          box-shadow: 2.5px 2.5px #730a81, -2.5px -2.5px #730a81;
+  text-decoration: none;
   overflow: hidden;
-  color: snow;
 }
 
 .preview figure {
@@ -64,8 +73,12 @@ article {
   font-size: 1.05rem;
   margin: 5px 0;
   padding: 10px 15px;
-  background: rgba(117, 9, 167, 0.781);
+  background: var(--purple);
   border-radius: 10px;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
 .preview:hover figure figcaption {

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base</title>
+    <%- include ('../partials/head'); %>
+    <link rel="stylesheet" href="/css/iframe/iframe.css">
+</head>
+<body>
+	<%- include ('../partials/navigation'); %>
+	<article>
+		html
+		<textarea name="html" id="html" cols="30" rows="10"></textarea>
+		css
+		<textarea name="css" id="css" cols="30" rows="10"></textarea>
+		js
+		<textarea name="js" id="js" cols="30" rows="10"></textarea>
+		<iframe srcdoc="<h1>Hola tu</h1>" ></iframe>
+	</article>
+
+	<%- include ('../partials/footer'); %>
+	<script src="js/iframe.js"></script>
+</body>
+</html>

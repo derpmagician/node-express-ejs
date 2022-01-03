@@ -1,80 +1,40 @@
 :root {
   --img-width: 240px;
 	--img-height: 200px;
+	--purple: rgba(115, 10, 129, 0.75);
 }
 
 body {
   background: rgb(19, 6, 95);
+  color: gold;
 }
 
-article {
+.previews {
 	display: grid;
 	place-items: center;
 	grid-template-columns: repeat(3, 1fr);
 	grid-gap: 15px;
-	// background: rgb(11, 8, 173);
 	margin: 5px;
 }
 
 .container-img {
 	display: grid;
 	place-items: center;
+	background: rgba(115, 10, 129, 0.329);
 
+	&:hover {
+		background: var(--purple);
+		box-shadow: 0 2.5px rgba(212, 166, 14, 0.842);
+		transition: all 0.5s;
+	}
 }
-
-// .navbar-brand {
-//   font-family: cursive;
-//   font-size: 1.5rem;
-// }
-
-// .nav-link {
-//   text-transform: uppercase;
-//   font-family: cursive;
-// }
-
-// header img {
-//   width: 60%;
-// }
-
-
-
-// figure {
-// 	display: grid;
-// 	place-items: center;
-
-// 	img {
-// 		object-fit: cover;
-// 		width: calc(var(--img-width) - 10px);
-// 		height: calc(var(--img-height) - 50px);
-// 		border-radius: 10px;
-// 	}
-
-// 	figcaption {
-// 		width: 75%;
-// 		color: gold;
-// 		text-align: center;
-// 		font-size: 1.05rem;
-// 		margin: 5px 0;
-// 		padding: 10px 15px;
-// 		background:rgb(117, 9, 167);
-// 		border-radius: 10px;
-// 	}
-// }
-
-// section {
-// 	margin: 15px;
-// 	color: snow;
-// 	font-size: 1.5rem;
-// }
 
 .preview {
 	object-fit: cover;
 	width: calc(var(--img-width) * 1);
 	height: calc(var(--img-height) * 1);
-
-	box-shadow: 2.5px 2.5px rgb(115, 10, 129), -2.5px -2.5px rgb(115, 10, 129);
+	text-decoration: none;
 	overflow: hidden;
-	color: snow;
 
 	figure {
 		display: grid;
@@ -82,6 +42,7 @@ article {
 		margin: 15px;
 		grid-template-columns: repeat(4, 1fr);
 		grid-template-rows: repeat(4, 1fr);
+
 
 		img {
 			object-fit: cover;
@@ -101,8 +62,9 @@ article {
 			font-size: 1.05rem;
 			margin: 5px 0;
 			padding: 10px 15px;
-			background:rgba(117, 9, 167, 0.781);
+			background:var(--purple);
 			border-radius: 10px;
+			transition: transform 0.5s;
 		}
 	}
 
