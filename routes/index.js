@@ -9,6 +9,10 @@ router.get('/contact', (req, res) => {
   res.render('contact', { title: 'Contact Page' });
 });
 
+router.get('/iframe', (req, res) => {
+  res.render('js_projects/iframe', { title: 'Iframe' });
+});
+
 router.get('/xmas_counter', (req, res) => {
   res.render('js_projects/xmas_counter', { title: 'Xmas Counter' });
 });
