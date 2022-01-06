@@ -6,15 +6,13 @@
   --gold: #FAC57D;
   --snow: #F0F4F7;
 }
-body .xmas{
-  height: 100vh;
-}
 
 .container {
   display: grid;
   place-items: center;
   background: var(--wine-red);
   padding: 1em 2em;
+  height: 90vh;
 }
 
 .project {
@@ -26,7 +24,7 @@ body .xmas{
   border-radius: 5px;
   box-shadow: var(--dark-green) 0px 4px 6px -1px,
               var(--light-green) 0px 2px 4px -1px;
- }
+}
 
 h1 {
   text-align: center;
@@ -55,3 +53,4 @@ h1 {
 .timer {
   background: var(--dark-green);
 }
+
